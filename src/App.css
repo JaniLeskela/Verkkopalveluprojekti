@@ -1,0 +1,10 @@
+:root {
+    --main-bg-color: #0C356A;
+    --secondary-color: #0174BE;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
