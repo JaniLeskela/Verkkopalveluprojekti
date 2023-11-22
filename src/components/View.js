@@ -1,10 +1,16 @@
-import kuva from '../101648.webp'
+import kuva from '../assets/101648.webp'
+import kalja from '../assets/beer-banner.jpg'
 import './Tuote.css'
 const tuote = {
     nimi: 'Leijona Viina',
     hinta: 24.49,
     kategoria: 'Viinat',
     kuva: '../101648.webp'
+}
+const Banner = () => {
+    return (
+        <img src={kalja} id='kalja' alt='kalja'/>
+    )
 }
 const Button = (props) => {
     return (
@@ -32,6 +38,7 @@ const Tuote = () => (
 const View = () => {
     return (
         <div className='view'>
+            <Banner />
             <Tuote />
             <Tuote />
             <Tuote />

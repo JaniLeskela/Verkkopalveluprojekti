@@ -1,6 +1,6 @@
 import './Navbar.css'
 import LinkItem from './LinkItems'
-import  logo from '../unnamed.png'
+import  logo from '../assets/unnamed.png'
 const styles = {
     login: {
         backgroundColor: '#008170',

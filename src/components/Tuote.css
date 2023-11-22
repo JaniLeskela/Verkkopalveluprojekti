@@ -5,7 +5,12 @@
     align-items: center;
     border: 2px solid var(--secondary-color);
     padding: 0 4px 8px;
-
+    margin-bottom: 10px;
+}
+#kalja {
+    width: 100%;
+    grid-column: 1 / -1;
+    height: 400px;
 }
 .view {
     padding: 8px;
@@ -38,7 +43,7 @@
 }
 
 .desc {
-    text-overflow: clip;
+    text-align: start;
     overflow: hidden;
     width: 100%;
     max-height: 300px;
@@ -58,11 +63,30 @@
 @media only screen and (min-width: 800px) {
     .view {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 100%);
         gap: 20px;
     }
     .tuote-main {
+        justify-self: center;
         max-width:500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .view {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100%);
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .view {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 100%);
+        gap: 20px;
     }
 }

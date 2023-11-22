@@ -1,5 +1,5 @@
 import LinkItem from './LinkItems'
-import facebook from '../sm-icons-facebook-logo.png'
+import facebook from '../assets/sm-icons-facebook-logo.png'
 import './Footer.css'
 
 const Footer = () => {
