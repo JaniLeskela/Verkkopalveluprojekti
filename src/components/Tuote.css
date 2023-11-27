@@ -8,9 +8,7 @@
     margin-bottom: 10px;
 }
 #kalja {
-    width: 100%;
-    grid-column: 1 / -1;
-    height: 400px;
+    display: none;
 }
 .view {
     padding: 8px;
@@ -61,6 +59,12 @@
 }
 
 @media only screen and (min-width: 800px) {
+    #kalja {
+        display: block;
+        width: 100%;
+        grid-column: 1 / -1;
+        height: 400px;
+    }
     .view {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
