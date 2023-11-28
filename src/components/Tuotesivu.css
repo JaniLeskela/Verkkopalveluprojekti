@@ -1,0 +1,30 @@
+.Esittely {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.Esittely-vasen {
+    margin-right: 30px;
+    
+}
+.Esittely-oikea {
+    display: block;
+    margin-left: 30px;
+     
+  
+}
+
+.Esittely-oikea > img {
+    width: auto;
+    height: 300px;
+}
+.Lisää {
+    width: auto;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+
+}

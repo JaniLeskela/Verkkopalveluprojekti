@@ -18,7 +18,7 @@ const Navbar = () => {
                 <LinkItem to={'/login'} text='Login' id='login' style={styles.login}/>
             </div>
             <div className='links'>
-                <LinkItem to={'/temp1'} text='Eka'/>
+                <LinkItem to={'/Tuotesivu'} text='Eka'/>
                 <LinkItem to={'/temp2'} text='Toka'/>
                 <LinkItem to={'/temp3'} text='Kolmas'/>
                 <LinkItem to={'/temp4'} text='Neljäs'/>
