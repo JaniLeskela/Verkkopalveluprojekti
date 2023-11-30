@@ -1,6 +1,7 @@
 import './Navbar.css'
 import LinkItem from './LinkItems'
 import  logo from '../assets/unnamed.png'
+import Ostoskoributton from './Ostoskoributton'
 const styles = {
     login: {
         backgroundColor: '#008170',
@@ -22,6 +23,9 @@ const Navbar = () => {
                 <LinkItem to={'/temp2'} text='Toka'/>
                 <LinkItem to={'/temp3'} text='Kolmas'/>
                 <LinkItem to={'/temp4'} text='Neljäs'/>
+            </div>
+            <div>
+            <Ostoskoributton />
             </div>
         </div>
     )

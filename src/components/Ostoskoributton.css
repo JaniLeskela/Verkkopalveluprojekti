@@ -1,0 +1,17 @@
+.ostoskori {
+    position: sticky;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 15px;
+
+}
+
+.ostoskoributton {
+    background-color: var(--secondary-color);
+}
+
+.ostoskoributton:hover {
+    background-color:var(--main-bg-color);
+    
+
+}
