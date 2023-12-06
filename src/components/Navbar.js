@@ -25,7 +25,7 @@ const Navbar = () => {
                 <LinkItem to={'/temp4'} text='Neljäs'/>
             </div>
             <div>
-            <Ostoskoributton />
+                <Ostoskoributton />
             </div>
         </div>
     )
