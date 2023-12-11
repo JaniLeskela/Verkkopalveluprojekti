@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Ostoskoributton = () => {
     return (
-        <div className="ostoskori">
+        <div className="ostoskorib">
             <Link to={'/Ostoskori'}>
                 <Button className="ostoskoributton"><img src={ostoskärry} id='ostoskärry' alt='ostoskärry'/></Button>
             </Link>    

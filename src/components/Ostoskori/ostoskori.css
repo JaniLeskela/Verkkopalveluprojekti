@@ -1,0 +1,33 @@
+.container {
+    width: 60%;
+    height: 40%;
+    background-color: #eee;
+    margin-top: 5%;
+    border-radius: 3%;
+}
+/*
+.Tuotekorttivas {
+    margin-right: 30px;
+    
+}
+.Esittely-oikea {
+    display: block;
+    margin-left: 30px;
+     
+  
+}
+
+.Tuotekorttioik > img {
+    width: auto;
+    height: 200px;
+}
+.Lisää {
+    width: auto;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+
+} */
+
