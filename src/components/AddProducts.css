@@ -1,0 +1,92 @@
+.form {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    flex-direction: column;
+    padding: 8px;
+}
+.preview {
+    max-width: 900px;
+    width: 100%;
+    border: 1px solid purple;
+    height: 100%;
+    max-height: 600px;
+    overflow: auto;
+}
+.addLabel {
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+.addInput {
+    height: 20px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 4px;
+}
+#file {
+    margin: 8px 0;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 8px 0;
+}
+
+.formButton {
+    font-size: 24px;
+    color: white;
+    margin-top: 8px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+}
+.productItem {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.productItem h4, p {
+    width: clamp(150px, 50%, 20%);
+    margin: 0;
+    overflow: auto;
+    overflow-wrap: break-word;
+    text-align: left;
+    max-height: 30px;
+    padding: 12px 0;
+}
+.productListBtn {
+    display: inline;
+    height: 30px;
+    width: max-content;
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+    font-size: 20px;
+}
+.btnAlas {
+    height: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    width: max-content;
+    font-size: 24px;
+    padding: 0 12px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
+.btnAlas:nth-child(1) {
+    background-color: red;
+}
+.bottomBtns {
+    display: flex;
+    margin-top: 8px;
+    max-width: 900px;
+    width: 100%;
+}

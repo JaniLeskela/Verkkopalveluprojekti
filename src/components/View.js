@@ -12,9 +12,9 @@ const Banner = () => {
         <img src={kalja} id='kalja' alt='kalja'/>
     )
 }
-const Button = (props) => {
+export const Button = (props) => {
     return (
-        <button className='tuotepainike' onClick={props.onClick}>
+        <button className='tuotepainike' onClick={props.onClick} style={{width: props.width}}>
             {props.text}
         </button>
     )
@@ -32,7 +32,7 @@ const Tuote = () => (
                 <p className='desc'>Tietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinasta</p>
             </div>
         </div>
-        <Button text='Lisää ostoskoriin'/>
+        <Button text='Lisää ostoskoriin' width='70%'/>
     </div>
 )
 const View = () => {
