@@ -1,16 +1,31 @@
 import "./Register.css"
-
+import {useState} from 'react'
+import axios from 'axios'
+import { jwtToken } from "./../signals/TokenSignal"
 
 export default function Register() {
+  const [fname, setFName] = useState('')
+  const [lname, setLName] = useState('')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+
+  const register = (e) => {
+    e.preventDefault()
+    axios.post('http://localhost:3001/register', {fname, lname, username, pw: password}).
+    then(res => jwtToken.value = res.data).
+    catch(err => console.log('Register error: ', err))
+  }
   return (
     
     <section className="register-container">
     <h3 className="register-h3">Register</h3>
     <div className="register-underline"></div>
-  <form className="register-form">
+  <form className="register-form" onSubmit={register}>
 
    <label htmlFor="etunimi" className="register-font"> Etunimi </label>
    <input 
+   value={fname}
+   onChange={({ target }) => setFName(target.value)}
    type="text"
    id="etunimi"
    placeholder="Mikko"
@@ -20,7 +35,9 @@ export default function Register() {
   
    
    <label htmlFor="sukunimi" className="register-font"> Sukunimi </label>
-   <input 
+   <input
+    value={lname}
+    onChange={({ target }) => setLName(target.value)} 
    type="text"
    id="sukunimi"
    placeholder="Mallikas"
@@ -30,6 +47,8 @@ export default function Register() {
 
    <label htmlFor="username" className="register-font">Käyttäjänimi</label>
    <input
+   value={username}
+   onChange={({ target }) => setUsername(target.value)}
    type="text"
    id="username"
    placeholder="MikkoMallikas12"
@@ -37,24 +56,17 @@ export default function Register() {
    required
    />
 
-   <label htmlFor="email" className="register-font"> Sähköposti </label>
-   <input
-   type="email"
-   id="email"
-   placeholder="your.email@example.com"
-   autoComplete="off"
-   required
-   />
-
    <label htmlFor="password" className="register-font"> Salasana </label>
-   <input 
+   <input
+    value={password}
+    onChange={({ target }) => setPassword(target.value)} 
    type="password"
    id="password"
    placeholder="***************"
    autoComplete="off"
    required
    />
-   <button className="register-button"> Rekisteröidy</button>
+   <button className="register-button" type='submit'> Rekisteröidy</button>
    
   </form>
 </section>
