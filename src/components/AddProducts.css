@@ -14,16 +14,20 @@
     overflow: auto;
 }
 .addLabel {
-    font-size: 18px;
-    margin-bottom: 2px;
+    font-size: 16px;
+    margin-bottom: 5px;
     margin-top: 12px;
+    font-weight: 600;
 }
 .addInput {
-    height: 20px;
+    height: 25px;
     border: 1px solid black;
     outline: none;
     padding-left: 4px;
+    border-radius: 5px;
 }
+
+  
 #file {
     margin: 8px 0;
 }

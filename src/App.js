@@ -6,6 +6,7 @@ import View from './components/View';
 import Tuotesivu from './components/Tuotesivu';
 import AddProducts from './components/AddProducts';
 import AddCategories from './components/AddCategories';
+import TuoteMap from './components/tuotemap/tuotemap';
 function App() {
   return (
     <div className="App">

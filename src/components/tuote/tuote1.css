@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+.tuote {
+    margin: 20px;
+    border: 2px solid #d9d9d9;
+    padding: 20px;
+    cursor: pointer;
+
+    
+   
+}
+
+.tuote-kuva {
+    width: 5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.tuote-nimi {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    align-self: center;
+    display: flex;
+}
+
+.tuote-arvostelut {
+    margin-bottom: 2rem;
+    display: flex;
+    margin-left: 20px;
+}
+
+.kaikki-arvostelut {
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.tuote-hinta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tuote-koko {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hinta {
+    font-size: 18px;
+    font-weight: 600 ;
+    text-decoration: underline;
+    
+}
+
+.star {
+    color: #d5ab55;
+    font-size: 30px;
+}
+
+.ostoskori-icon {
+    font-size: 30px;
+    color: #535353
+}
