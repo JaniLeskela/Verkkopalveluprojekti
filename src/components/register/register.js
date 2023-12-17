@@ -12,7 +12,7 @@ export default function Register() {
   const register = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3001/register', {fname, lname, username, pw: password}).
-    then(res => jwtToken.value = res.data).
+    then(res => console.log('Register res', res )/*jwtToken.value = res.data.jwtToken*/).
     catch(err => console.log('Register error: ', err))
   }
   return (

@@ -44,25 +44,10 @@ const View = (props) => {
     return (
         <div className='view'>
             <Banner />
-<<<<<<< HEAD
             {props.products.map(prod =>
                 <Tuote prod={prod}/>
                 )}
-=======
-            
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
->>>>>>> 7562158b499f7a80dd01d0ea862fb918000a56d7
+
         </div>
     )
 }

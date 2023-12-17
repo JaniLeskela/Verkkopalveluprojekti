@@ -4,13 +4,16 @@ import { jwtToken } from "./../signals/TokenSignal"
 import { useState } from 'react' 
 
 
-export default function Login() {
+export default function Login(props) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const login = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3001/login', {username, pw: password}).
-    then(res => jwtToken.value = res.data.jwtToken).
+    then(res => {
+      props.setToken(res.data.jwtToken)
+      window.localStorage.setItem('token', JSON.stringify(res.data.jwtToken))
+    }).
     catch(err => console.log(err))
   }
   return (
