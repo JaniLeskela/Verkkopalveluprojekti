@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import {Routes, Route } from 'react-router-dom'
+import {useState, useEffect} from 'react'
 import Footer from './components/Footer';
 import View from './components/View';
 import Tuotesivu from './components/Tuotesivu';
