@@ -6,6 +6,8 @@ import View from './components/View';
 import Tuotesivu from './components/Tuotesivu';
 import AddProducts from './components/AddProducts';
 import AddCategories from './components/AddCategories';
+import Register from './components/register/register'
+import Login from './components/login/login'
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,8 @@ function App() {
         <Route path='temp2' element={<AddProducts />} />
         <Route path='temp3' element={<AddCategories />} />
         <Route path='Tuotesivu' element={<Tuotesivu />}/>
+        <Route path='register' element={<Register />}/>
+        <Route path='login' element={<Login />}/>
       </Routes>
       <Footer />
     </div>
