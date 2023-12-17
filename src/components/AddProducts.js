@@ -32,7 +32,7 @@ const ProductForm = ({ submitProducts }) => {
     }
     return (
         <form className='form' onSubmit={sendProducts}>
-            <p>Product from</p>
+            <h2 className='add-tuote'>Product Form</h2>
             <label className='addLabel'>Product name</label>
             <input value={productName} onChange={ ({ target }) => setProductName(target.value)} name='name' className='addInput' placeholder='Product name' required={true}/>
             <label className='addLabel'>Product price</label>

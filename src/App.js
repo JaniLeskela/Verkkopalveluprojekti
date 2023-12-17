@@ -9,7 +9,6 @@ import AddProducts from './components/AddProducts';
 import AddCategories from './components/AddCategories';
 import Register from './components/register/register'
 import Login from './components/login/login'
-import axios from 'axios'
 function App() {
   const [products, setProducts] = useState([])
   useEffect(() => {

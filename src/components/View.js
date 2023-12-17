@@ -1,6 +1,7 @@
 import kuva from '../assets/101648.webp'
 import kalja from '../assets/beer-banner.jpg'
 import './Tuote.css'
+import TuoteMap from './tuotemap/tuotemap'
 const tuote = {
     nimi: 'Leijona Viina',
     hinta: 24.49,
@@ -43,9 +44,25 @@ const View = (props) => {
     return (
         <div className='view'>
             <Banner />
+<<<<<<< HEAD
             {props.products.map(prod =>
                 <Tuote prod={prod}/>
                 )}
+=======
+            
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+            <Tuote />
+>>>>>>> 7562158b499f7a80dd01d0ea862fb918000a56d7
         </div>
     )
 }
