@@ -14,43 +14,38 @@ const Banner = () => {
 }
 export const Button = (props) => {
     return (
-        <button className='tuotepainike' onClick={props.onClick} style={{width: props.width}}>
+        <button className='tuotepainike' onClick={props.onClick} >
             {props.text}
         </button>
     )
 }
-const Tuote = () => (
+const Tuote = (props) => {
+    console.log('PRod: ', props.prod)
+return (
     <div className='tuote-main'>
-        <h2 className='otsikko'>{tuote.nimi}</h2>
+        <h2 className='otsikko'>{props.prod.productName}</h2>
         <div className='keski'>
             <img src={kuva} alt='kuva'/>
             <div className='tiedot'> 
                 <div className='hinnasto'>
-                    <h2>{tuote.hinta} €</h2>
-                    <h2>{tuote.kategoria}</h2>
+                    <h2>{props.prod.price} €</h2>
+                    <h2>{props.prod.category}</h2>
                 </div>
                 <p className='desc'>Tietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinastaTietoa tästä viinasta</p>
             </div>
         </div>
-        <Button text='Lisää ostoskoriin' width='70%'/>
+        <Button text='Lisää ostoskoriin' />
     </div>
 )
-const View = () => {
+}
+const View = (props) => {
+    console.log('Prods: ', props.products)
     return (
         <div className='view'>
             <Banner />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
-            <Tuote />
+            {props.products.map(prod =>
+                <Tuote prod={prod}/>
+                )}
         </div>
     )
 }
