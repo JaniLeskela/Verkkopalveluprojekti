@@ -6,7 +6,7 @@ import Tuote1 from "../tuote/tuote1";
 
 
 
-function TuoteMap() {
+function TuoteMap(props) {
 
   
  
@@ -19,8 +19,6 @@ function TuoteMap() {
         <Tuote1
         kuva={kuva}
         nimi = {nimi}
-        star={star}
-        arvostelut={arvostelut}
         hinta={hinta}
         koko = {koko}
         />

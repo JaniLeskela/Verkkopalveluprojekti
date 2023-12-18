@@ -10,6 +10,9 @@ import AddCategories from './components/AddCategories';
 import Register from './components/register/register'
 import Login from './components/login/login'
 import axios from 'axios'
+import TuoteMap from './components/tuotemap/tuotemap';
+import Tuotesivu1 from './components/tuotesivu1';
+
 function App() {
   const [products, setProducts] = useState([])
   const [token, setToken] = useState(null)
@@ -34,15 +37,19 @@ function App() {
   const setUserLogin = (token) => {
     setToken(token)
   }
+  const logout = () => {
+    setToken(null)
+    localStorage.removeItem("token");
+  }
   return (
     <div className="App">
-      <Navbar />
+      <Navbar user={token} logout={logout}/>
 
       <Routes>
         <Route path='/' element={<View products={products.slice(0, 8)} />}/>
         <Route path='temp2' element={<AddProducts />} />
         <Route path='temp3' element={<AddCategories />} />
-        <Route path='Tuotesivu' element={<Tuotesivu />}/>
+        <Route path='tuotteet' element={<TuoteMap products={products} />}/>
         <Route path='register' element={<Register />}/>
         <Route path='login' element={<Login setToken={setUserLogin}/>}/>
       </Routes>

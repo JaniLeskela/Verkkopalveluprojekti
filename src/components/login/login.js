@@ -1,10 +1,10 @@
 import "./login.css"
 import axios from 'axios'
-import { jwtToken } from "./../signals/TokenSignal"
 import { useState } from 'react' 
-
+import { useNavigate } from "react-router-dom";
 
 export default function Login(props) {
+  const navigate = useNavigate()
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const login = (e) => {
@@ -13,6 +13,7 @@ export default function Login(props) {
     then(res => {
       props.setToken(res.data.jwtToken)
       window.localStorage.setItem('token', JSON.stringify(res.data.jwtToken))
+      navigate('/')
     }).
     catch(err => console.log(err))
   }

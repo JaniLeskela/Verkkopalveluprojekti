@@ -1,9 +1,10 @@
 import "./Register.css"
 import {useState} from 'react'
 import axios from 'axios'
-import { jwtToken } from "./../signals/TokenSignal"
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
+  const navigate = useNavigate()
   const [fname, setFName] = useState('')
   const [lname, setLName] = useState('')
   const [username, setUsername] = useState('')
@@ -12,7 +13,7 @@ export default function Register() {
   const register = (e) => {
     e.preventDefault()
     axios.post('http://localhost:3001/register', {fname, lname, username, pw: password}).
-    then(res => console.log('Register res', res )/*jwtToken.value = res.data.jwtToken*/).
+    then(() => navigate('/login')/*jwtToken.value = res.data.jwtToken*/).
     catch(err => console.log('Register error: ', err))
   }
   return (
