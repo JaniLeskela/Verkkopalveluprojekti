@@ -16,10 +16,7 @@
 img {
     height: 35px;
     width: 35px;
-   
-    
 }
-
 .footer-image {
     border-radius: 10px;
     gap: 25px;
@@ -30,15 +27,11 @@ img {
     align-items: center;
     gap: 50px;
     justify-content: center;
-
-   
 }
 .items-text{
     display: flex;
     justify-content: center;
     margin-left: 55px;
-   
-   
 }
 .yttext{
     margin-left: 20px;
@@ -46,7 +39,6 @@ img {
 }
 
 .twtext{
-    
     margin-right: 10px;
 }
 .igtext{

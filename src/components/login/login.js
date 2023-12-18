@@ -2,6 +2,7 @@ import "./login.css"
 import axios from 'axios'
 import { useState } from 'react' 
 import { useNavigate } from "react-router-dom";
+import LinkItem from "../LinkItems";
 
 export default function Login(props) {
   const navigate = useNavigate()
@@ -19,10 +20,9 @@ export default function Login(props) {
   }
   return (
     
-    <section className="login-container"> 
+  <section className="login-container"> 
         <h3 className="login-h3">Kirjaudu sisään</h3>
     
-
     <form className="login-form" onSubmit={login}>
         <label htmlFor="username" className="login-font"> Käyttäjänimi</label>
             <input
@@ -31,6 +31,7 @@ export default function Login(props) {
             type="text"
             id="username"
             autoComplete="off"
+            placeholder="Käyttäjänimi"
             required/>
 
         <label  htmlFor="password"className="login-font">Salasana</label>
@@ -40,14 +41,15 @@ export default function Login(props) {
             type="password"
             id="password"
             autoComplete="off"
+            placeholder="**************"
             required/> 
 
             <button className="login-button" type='submit'>Kirjaudu sisään</button> 
-        
 
-
+            <div className="register-painike">
+            <LinkItem to={'/register'} text='Rekisteröidy'/>
+            </div>
     </form>
-
-    </section>
+  </section>
   )
 }

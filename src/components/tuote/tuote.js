@@ -34,29 +34,20 @@ import {FaCartPlus} from "react-icons/fa" //npm i react-icons
       </section>*/
 const Tuote = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
 
-    
   return (
 <>
-
-
-
   <section className="tuote">
 
-
   <div className="kuva-container">
-    
         <img src={kuva} alt={nimi}
          className="tuote-kuva"/>
-
 </div>
 
     <div className="tuote-tiedot">
       
-
       <div className="tuote-keskitys">
         <h3 className="tuote-nimi"> {nimi}</h3>
-
-        </div>
+      </div>
       
         <section className="tuote-arvostelut">
           {star} {star} {star} {star}
@@ -66,21 +57,17 @@ const Tuote = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
         <section className="tuote-hinta">
           <div>
             <span className="hinta">{hinta} € </span>
-            
+          
             <section className="tuote-koko"> {koko}</section>
             </div>
 
           <div className="ostoskoriin">
-      <FaCartPlus className="ostoskori-icon"/>
-
+          <FaCartPlus className="ostoskori-icon"/>
           </div>
       </section>
 
     </div>
   </section>
-
- 
-  
 </>
   );
 };

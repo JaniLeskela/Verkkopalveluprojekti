@@ -1,6 +1,8 @@
 import './Navbar.css'
 import LinkItem from '../LinkItems'
 import  logo from '../../assets/unnamed.png'
+
+
 const styles = {
     login: {
         backgroundColor: '#008170',
@@ -19,10 +21,11 @@ const Navbar = (props) => {
                 {props.user && <p style={styles.login} onClick={props.logout}>Logout</p>}
             </div>
             <div className='links'>
-                <LinkItem to={'/tuotteet'} text='Products'/>
-                <LinkItem to={'/temp2'} text='Add Product'/>
-                <LinkItem to={'/temp3'} text='Add Category'/>
-                <LinkItem to={'/temp4'} text='Neljäs'/>
+                <LinkItem to={'/'} text='Koti'/>
+                <LinkItem to={'/tuotteet'} text='Tuotteet'/>
+                <LinkItem to={'/temp2'} text='Lisää tuote'/>
+                <LinkItem to={'/temp3'} text='Lisää kategoria'/>
+                
             </div>
         </div>
     )

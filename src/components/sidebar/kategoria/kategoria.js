@@ -14,7 +14,7 @@ import "./kategoria.css"
           <input onChange={handleChange} 
           type="radio"
           value=""
-          name="test"/>
+          name="kategoria"/>
           <span className="checkmark"></span> Kaikki Tuotteet
         </label>
 
@@ -22,20 +22,28 @@ import "./kategoria.css"
         handleChange={handleChange}
         value="Oluet"
         title="Oluet"
-        name="test"/>
+        name="kategoria"/>
 
         <Input
         handleChange={handleChange}
         value="Liköörit ja Katkerot"
         kategoria= "Liköörit ja Katkerot"
         title="Liköörit ja Katkerot"
-        name="test"/>
+        name="kategoria"/>
 
         <Input
         handleChange={handleChange}
         value="Vodkat ja Viinat"
         title="Vodkat ja Viinat"
-        name="test"/>
+        name="kategoria"/>
+
+        <Input
+        handleChange={handleChange}
+        value="Viinit"
+        title="Viinit"
+        name="kategoria"/>
+
+        
 
       </div>
     </div>

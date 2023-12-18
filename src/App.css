@@ -8,3 +8,62 @@
     height: 100vh;
     background-color: white;
 }
+
+.etusivu-container {
+    background: linear-gradient(#1361cf,  #a8aeb5);
+    height:fit-content
+}
+
+.etusivu-otsikko {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #c9c9c9;
+    font-size: 48px;
+}
+.etusivu-alaotsikko {
+    display: inline-block;
+    margin-left: 17rem;
+    margin-bottom: 10px;
+    color: #c9c9c9;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.tieto-laatikko{
+    display: inline-block;
+}
+
+.etusivu-teksti {
+margin-bottom: 32px;
+color: #c9c9c9;
+margin-left: 10px;
+display: block;
+padding: 20px;
+width: 400px;
+
+   
+}
+.sivukuvaus {
+    color: #c9c9c9;
+    padding: 20px;
+    margin-left: 120px;
+    width: 400px;
+}
+
+.sivukuvaus-laita {
+    color: #c9c9c9;
+    padding: 20px;
+    margin-left: 120px;
+    width: 400px;
+}
+.Tekstilaatikot {
+    display: flex;
+    width: 1600px;
+font-size: 18px;
+font-weight: 600;
+border-top: 2px solid #ededed;
+border-radius: 5px;
+margin-left: 15rem;
+}
+

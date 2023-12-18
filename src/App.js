@@ -3,15 +3,17 @@ import Navbar from './components/navbar/Navbar';
 import {Routes, Route } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Footer from './components/footer/Footer';
-import View from './components/View';
 import AddProducts from './components/addcategoryproducts/AddProducts';
 import AddCategories from './components/addcategoryproducts/AddCategories';
 import Register from './components/register/register'
 import Login from './components/login/login'
 import axios from 'axios'
 import TuoteMap from './components/tuotemap';
+import Home from './components/home'
 
 
+
+// <View products={products.slice(0, 8) laita tämä Route 1.
 function App() {
   const [products, setProducts] = useState([])
   const [token, setToken] = useState(null)
@@ -45,7 +47,7 @@ function App() {
       <Navbar user={token} logout={logout}/>
 
       <Routes>
-        <Route path='/' element={<View products={products.slice(0, 8)} />}/>
+        <Route path='/' element={<Home />}/>
         <Route path='temp2' element={<AddProducts />} />
         <Route path='temp3' element={<AddCategories />} />
         <Route path='tuotteet' element={<TuoteMap products={products} />}/>

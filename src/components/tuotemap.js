@@ -25,7 +25,6 @@ function TuoteMap() {
   const filteredItems = tuotteet.filter((tuote) =>
   tuote.nimi.toLowerCase().indexOf(query.toLowerCase()) !== 1);
 
-
   //------- Radio Filter ------------
 
   const handleChange = event => {
@@ -67,24 +66,18 @@ function TuoteMap() {
         />
       )
     )
-
   }
 
+  const result = filteredData(tuotteet,selectedCategory, query)
 
-
-    const result = filteredData(tuotteet,selectedCategory, query)
   /*<Tuotesivu result={result}/>*/
-   
-   
    
     return (
       <>
       <Sidebar handleChange={handleChange}/>
        <Suositut handleClick={handleClick}/>
-       
         <Tuotesivu result={result}/>
-        </>
+      </>
       );
   }
-  
   export default TuoteMap;

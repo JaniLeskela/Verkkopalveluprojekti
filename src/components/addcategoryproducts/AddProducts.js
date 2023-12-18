@@ -32,11 +32,9 @@ const ProductForm = ({ submitProducts }) => {
     }
     return (
 
-    
-
         <form className='form' onSubmit={sendProducts}>
     <div className='otsikko-keskitys'>
-            <h2 className='add-tuote'>Product Form</h2>
+            <h2 className='add-tuote'>Tuotteen lisäys</h2>
             </div>
             <label className='addLabel'>Tuotteen nimi</label>
             <input value={productName} onChange={ ({ target }) => setProductName(target.value)} name='name' className='addInput' placeholder='Tuotteen nimi' required={true}/>
@@ -58,7 +56,6 @@ export const ListHeaders = ({headers}) => (
         <button className='productListBtn' style={{visibility: 'hidden'}}>Delete</button>
         {headers.map(n => 
             <h4 key={n}>{n}</h4>
-
         )}
     </div>
 )
@@ -97,5 +94,4 @@ const AddProducts = () => {
         </div>
     )
 }
-
 export default AddProducts

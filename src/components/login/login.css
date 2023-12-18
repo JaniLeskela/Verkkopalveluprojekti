@@ -4,13 +4,12 @@
 .login-container {
     display: flex;
   flex-direction: column;
-  justify-content: center;
+  
   align-items: center;
   min-height: 100vh; 
   padding: 1rem 0.5rem;
   background: linear-gradient(#1361cf,  #a8aeb5)
 }
-
 .login-h3 {
     font-family: 'Nunito', sans-serif;
     font-size: 32px;
@@ -19,7 +18,6 @@
     margin-bottom: 15px;
     
 }
-
 .login-font {
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -28,7 +26,6 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
-
 .login-form {
     width: 100%;
     max-width: 420px;
@@ -40,17 +37,27 @@
     background-color: rgba(0,0,0,0.4);
     border-radius: 1rem;
 }
-
-
-
 .login-button {
-    
+    display: flex;
+   align-self: center;
     margin-top: 2rem;
-    
+    width: 240px;
     border-radius: 0.5rem;
+   justify-content: center;
+   align-items: center;
     height: 50px;
     font-size: 24px;
     color: #126bc9;
+  }
+
+  .register-painike {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: #126bc9;
+    border: 2px solid #fff;
+    border-radius: 5px;
   }
 
   

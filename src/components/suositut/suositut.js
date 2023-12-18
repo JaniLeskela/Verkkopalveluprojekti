@@ -2,6 +2,7 @@ import "./suositut.css"
 import Button from "../button/button"
 const Suositut = ({handleClick}) => {
   return (
+
    <>
    <div>
     <h2 className="suositut-otsikko">Suositut tuotteet</h2>
@@ -10,9 +11,9 @@ const Suositut = ({handleClick}) => {
        <Button onClickHandler={handleClick} value="Oluet" title="Oluet" />
        <Button onClickHandler={handleClick} value="Liköörit ja Katkerot" title="Liköörit ja Katkerot" />
        <Button onClickHandler={handleClick} value="Vodkat ja Viinat" title="Vodkat ja Viinat" />
+       <Button onClickHandler={handleClick} value="Viinit" title="Viinit" />
     </div>
    </div>
-   
    </>
   )
 }

@@ -2,6 +2,7 @@ import "./Register.css"
 import {useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
+import LinkItem from "../LinkItems";
 
 export default function Register() {
   const navigate = useNavigate()
@@ -68,6 +69,9 @@ export default function Register() {
    required
    />
    <button className="register-button" type='submit'> Rekisteröidy</button>
+   <div className="register-painike">
+            <LinkItem to={'/login'} text='Login'/>
+            </div>
    
   </form>
 </section>

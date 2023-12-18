@@ -7,12 +7,10 @@
     
     display: flex;
 }
-
 .title-container {
     display: flex;
     justify-content: center;
 }
-
 .sidebar-items {
     margin-top: 20px;
 }
@@ -30,13 +28,11 @@
     -ms-user-select: none;
     user-select: none;
 }
-
 .sidebar-label-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
-
 .checkmark {
     position: absolute;
     top: 0;
@@ -46,15 +42,12 @@
     background-color: #eee;
     border-radius: 50%;
 }
-
 .sidebar-label-container:hover input ~ .checkmark {
     background-color: #ccc;
 }
-
 .sidebar-label-container input:checked ~ .checkmark {
     background-color: #2196f3;
 }
-
 .checkmark::after {
     content: "";
     position: absolute;
@@ -63,7 +56,6 @@
 .sidebar-label-container input:checked ~.checkmark::after {
     display: block;
 }
-
 .sidebar-label-container .checkmark::after {
     top: 6.3px;
     left: 6.25px;
@@ -72,7 +64,6 @@
     border-radius: 60%;
     background: white;
 }
-
 .line {
     margin-top: 3rem;
     border-color: #f7f7f7;

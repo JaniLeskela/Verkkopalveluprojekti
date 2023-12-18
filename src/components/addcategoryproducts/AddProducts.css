@@ -14,7 +14,6 @@
     max-height: 600px;
     overflow: auto;
 }
-
 .add-tuote{
     font-size: 28px;
 }
@@ -22,9 +21,7 @@
     font-size: 22px;
     margin-bottom: 5px;
     margin-top: 12px;
-    
 }
-
 .otsikko-keskitys {
     display: flex;
     justify-content: center;
@@ -36,8 +33,6 @@
     padding-left: 4px;
     border-radius: 5px;
 }
-
-  
 #file {
     margin: 8px 0;
 }
@@ -50,14 +45,11 @@
     height: 100%;
     padding: 8px 0;
 }
-
 .button-display {
     display: flex;
     justify-content: center;
 }
-
 .formButton {
-    
     font-size: 22px;
     color: white;
     margin-top: 8px;
@@ -71,7 +63,7 @@
     justify-content: space-around;
     align-items: center;
 }
-.productItem h4, p {
+.productItem h4 {
     width: clamp(150px, 50%, 20%);
     margin: 0;
     overflow: auto;
