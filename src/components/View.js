@@ -18,22 +18,20 @@ export const Button = (props) => {
         </button>
     )
 }
-function Tuotteet() {
-
-  
+function Tuotteet(props) {
  
-    const tuote = tuotteet;
+    const tuote = props.products;
     function Products(tuote) {
     
   
     return tuote.map(
-      ({kuva, nimi, arvostelut, kategoria, hinta, koko, star}) => (
+      ({image, productName, arvostelut, category, price, koko, star}) => (
         <Tuote1
-        kuva={kuva}
-        nimi = {nimi}
+        kuva={image}
+        nimi = {productName}
         star={star}
         arvostelut={arvostelut}
-        hinta={hinta}
+        hinta={price}
         koko = {koko}
         />
       )
