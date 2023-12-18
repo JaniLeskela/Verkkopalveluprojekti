@@ -10,6 +10,7 @@ const data = [
       kategoria: "Liköörit ja Katkerot",
       hinta: 18.98 ,
       koko: "0.5 l",
+      star: <AiFillStar className="star"/>
 
 
     },
@@ -22,6 +23,7 @@ const data = [
         kategoria: "Liköörit ja Katkerot",
         hinta: 24.92 ,
         koko: "0.5 l",
+        star: <AiFillStar className="star"/>
 
       },
       
@@ -32,6 +34,7 @@ const data = [
         kategoria: "Oluet",
         hinta: 3.98 ,
         koko: "0.5 l",
+        star: <AiFillStar className="star"/>
 
   
       },
@@ -43,6 +46,7 @@ const data = [
         kategoria: "Oluet",
         hinta: 4.18 ,
         koko: "0.33 l",
+        star: <AiFillStar className="star"/>
 
   
       },
