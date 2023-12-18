@@ -1,10 +1,12 @@
 
 import kalja from '../assets/beer-banner.jpg'
-import './Tuote.css'
+
 import Tuote1 from '../components/tuote/tuote1';
 import Suositut from '../components/suositut/suositut';
-import tuotteet from '../components/data/tuotedb';
+//import tuotteet from '../components/data/tuotedb';
 import Tuotesivu1 from '../components/tuotesivu1';
+
+
 
 const Banner = () => {
     return (

@@ -50,5 +50,16 @@ const data = [
 
   
       },
+
+    {  kuva: "https://images.alko.fi/images/cs_srgb,f_auto,t_medium/cdn/101636/leijona-viina-muovipullo.jpg",
+      nimi: "Leijona Viina",
+      arvostelut: "(321)",
+      kategoria: "Vodkat ja Viinat",
+      hinta: 12.49 ,
+      koko: "0.5 l",
+      star: <AiFillStar className="star"/>
+
+
+    }
 ]
 export default data

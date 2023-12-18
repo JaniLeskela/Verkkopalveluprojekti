@@ -45,8 +45,6 @@ const Tuote1 = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
 
   <div className="kuva-container">
     
-
- 
         <img src={kuva} alt={nimi}
          className="tuote-kuva"/>
 

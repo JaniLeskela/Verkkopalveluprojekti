@@ -31,14 +31,18 @@
     margin-bottom: 10px;
 }
 .tuote-arvostelut {
-    margin-bottom: 2rem;
+    margin-bottom: 10px;
     display: flex;
+    height: 30px;
+    justify-content: center;
    
 }
 .kaikki-arvostelut {
     margin-top: 5px;
     font-size: 0.9rem;
-    margin-left: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: right;
 }
 .tuote-hinta {
     display: flex;

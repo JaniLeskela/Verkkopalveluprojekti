@@ -13,11 +13,17 @@ const CategoryForm = ({ addCategories }) => {
     }
     return (
         <form className='form' onSubmit={sendCategories}>
-            <label className='addLabel' for='category'>Category</label>
-            <input name='category' value={category} onChange={ ({ target }) => setCategory(target.value)} className='addInput' placeholder='Category' required={true}/>
-            <label name='description' className='addLabel'>Description</label>
-            <textarea name='description' value={description} onChange={ ({ target }) => setDescription(target.value)} className='addInput' placeholder='Description' required={true}></textarea>
-            <button className='formButton' type='submit'>Lisää listalle</button>
+
+            <div className='otsikko-keskitys'>
+            <h2 className='add-tuote'>Lisää Kategoria</h2>
+            </div>
+            <label className='addLabel' for='category'>Kategoria</label>
+            <input name='category' value={category} onChange={ ({ target }) => setCategory(target.value)} className='addInput' placeholder='Kategoria' required={true}/>
+            <label name='description' className='addLabel'>Tuotekuvaus</label>
+            <textarea name='description' value={description} onChange={ ({ target }) => setDescription(target.value)} className='addInput' placeholder='Tuotekuvaus' required={true}></textarea>
+           <div className="button-display">
+           <button className='formButton' type='submit'>Lisää listalle</button>
+           </div>
         </form>
     )
 }

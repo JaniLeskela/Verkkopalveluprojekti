@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import {Routes, Route } from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import Footer from './components/Footer';
+import Footer from './components/footer/Footer';
 import View from './components/View';
-import Tuotesivu from './components/Tuotesivu';
-import AddProducts from './components/AddProducts';
-import AddCategories from './components/AddCategories';
+
+import AddProducts from './components/addcategoryproducts/AddProducts';
+import AddCategories from './components/addcategoryproducts/AddCategories';
 import Register from './components/register/register'
 import Login from './components/login/login'
 import axios from 'axios'

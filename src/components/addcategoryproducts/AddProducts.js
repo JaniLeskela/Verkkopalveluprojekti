@@ -31,16 +31,23 @@ const ProductForm = ({ submitProducts }) => {
         setProductPrice('')
     }
     return (
+
+    
+
         <form className='form' onSubmit={sendProducts}>
+    <div className='otsikko-keskitys'>
             <h2 className='add-tuote'>Product Form</h2>
-            <label className='addLabel'>Product name</label>
-            <input value={productName} onChange={ ({ target }) => setProductName(target.value)} name='name' className='addInput' placeholder='Product name' required={true}/>
-            <label className='addLabel'>Product price</label>
-            <input value={productPrice} onChange={ ({ target }) => setProductPrice(target.value)} className='addInput' placeholder='Price' required={true}/>
-            <label className='addLabel'>Product category</label>
-            <input value={productCategory} onChange={ ({ target }) => setProductCategory(target.value)} className='addInput' placeholder='Category' required={true}/>
+            </div>
+            <label className='addLabel'>Tuotteen nimi</label>
+            <input value={productName} onChange={ ({ target }) => setProductName(target.value)} name='name' className='addInput' placeholder='Tuotteen nimi' required={true}/>
+            <label className='addLabel'>Tuotteen hinta</label>
+            <input value={productPrice} onChange={ ({ target }) => setProductPrice(target.value)} className='addInput' placeholder='Hinta' required={true}/>
+            <label className='addLabel'>Tuotteen kategoria</label>
+            <input value={productCategory} onChange={ ({ target }) => setProductCategory(target.value)} className='addInput' placeholder='Kategoria' required={true}/>
             <input onChange={ ({ target }) => setProductImage(URL.createObjectURL(target.files[0]))}type='file' id='file' accept="image/*"/>
+            <div className='button-display'>
             <button className='formButton' type='submit'>Lisää listalle</button>
+            </div>
         </form>
     )
 }

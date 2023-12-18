@@ -1,18 +1,19 @@
 import "./suositut.css"
-
-export default function Suositut() {
+import Button from "../button/button"
+const Suositut = ({handleClick}) => {
   return (
    <>
    <div>
     <h2 className="suositut-otsikko">Suositut tuotteet</h2>
     <div className="suositut-flex">
-        <button className="btns">Kaikki</button>
-        <button className="btns">Vodkat ja Viinat</button>
-        <button className="btns">Valkoviinit</button>
-        <button className="btns">Oluet</button>
+       <Button onClickHandler={handleClick} value="" title="Kaikki Tuotteet" />
+       <Button onClickHandler={handleClick} value="Oluet" title="Oluet" />
+       <Button onClickHandler={handleClick} value="Liköörit ja Katkerot" title="Liköörit ja Katkerot" />
+       <Button onClickHandler={handleClick} value="Vodkat ja Viinat" title="Vodkat ja Viinat" />
     </div>
    </div>
    
    </>
   )
 }
+export default Suositut;
