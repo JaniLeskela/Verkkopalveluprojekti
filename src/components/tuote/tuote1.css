@@ -7,63 +7,67 @@
     border: 2px solid #d9d9d9;
     padding: 20px;
     cursor: pointer;
-    width: 250px;
-
-    
-   
+    width: 250px;  
 }
-
+.kuva-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .tuote-kuva {
     width: 5rem;
     height: 220px;
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
     align-items: center;
-    margin-left: 55px;
+   
 }
-
+.tuote-keskitys {
+    display: flex;
+    justify-content: center;
+}
 .tuote-nimi {
     font-size: 20px;
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 25px;
+    margin-bottom: 10px;
 }
-
 .tuote-arvostelut {
     margin-bottom: 2rem;
     display: flex;
-    margin-left: 20px;
+   
 }
-
 .kaikki-arvostelut {
+    margin-top: 5px;
     font-size: 0.9rem;
     margin-left: 10px;
 }
-
 .tuote-hinta {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+   align-items: center;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
 }
-
 .tuote-koko {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    
+    padding-top: 5px;
+    text-decoration: underline;
 }
-
 .hinta {
     font-size: 18px;
     font-weight: 600 ;
     text-decoration: underline;
-    
+    height: 40px;
 }
-
 .star {
     color: #d5ab55;
     font-size: 30px;
 }
-
 .ostoskori-icon {
     font-size: 30px;
-    color: #535353
+    color: #535353;
+    margin-left: 110px;
+    justify-content: right;
+    
 }

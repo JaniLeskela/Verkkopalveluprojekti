@@ -42,12 +42,24 @@ const Tuote1 = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
 
   <section className="tuote">
 
+
+  <div className="kuva-container">
+    
+
+ 
         <img src={kuva} alt={nimi}
          className="tuote-kuva"/>
 
+</div>
+
     <div className="tuote-tiedot">
+      
+
+      <div className="tuote-keskitys">
         <h3 className="tuote-nimi"> {nimi}</h3>
 
+        </div>
+      
         <section className="tuote-arvostelut">
           {star} {star} {star} {star}
           <span className="kaikki-arvostelut"> {arvostelut}</span>
@@ -55,7 +67,7 @@ const Tuote1 = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
 
         <section className="tuote-hinta">
           <div>
-            <p className="hinta">{hinta} € </p>
+            <span className="hinta">{hinta} € </span>
             
             <section className="tuote-koko"> {koko}</section>
             </div>
