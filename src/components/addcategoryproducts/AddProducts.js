@@ -54,9 +54,11 @@ const ProductForm = ({ submitProducts }) => {
 
 export const ListHeaders = ({headers}) => (
     <div className='productItem'>
+       
         <button className='productListBtn' style={{visibility: 'hidden'}}>Delete</button>
         {headers.map(n => 
             <h4 key={n}>{n}</h4>
+
         )}
     </div>
 )

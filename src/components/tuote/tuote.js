@@ -1,4 +1,4 @@
-import "./tuote1.css"
+import "./tuote.css"
 
 
 import {FaCartPlus} from "react-icons/fa" //npm i react-icons
@@ -32,7 +32,7 @@ import {FaCartPlus} from "react-icons/fa" //npm i react-icons
     
     </div>
       </section>*/
-const Tuote1 = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
+const Tuote = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
 
     
   return (
@@ -85,4 +85,4 @@ const Tuote1 = ({kuva, nimi, star, hinta,arvostelut, koko }) => {
   );
 };
 
-  export default Tuote1;
+  export default Tuote;

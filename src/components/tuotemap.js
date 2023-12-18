@@ -1,12 +1,12 @@
 
-import Tuotesivu1 from "../tuotesivu1";
-import Suositut from "../suositut/suositut"
-import Tuote1 from "../tuote/tuote1";
-import Sidebar from "../sidebar/sidebar";
+import Tuotesivu from "./tuotesivu";
+import Suositut from "./suositut/suositut"
+import Tuote from "./tuote/tuote";
+import Sidebar from "./sidebar/sidebar";
 import { useState } from "react";
 
         //------Database-----------
-import tuotteet from "../data/tuotedb"
+import tuotteet from "./data/tuotedb"
 
 
 function TuoteMap() {
@@ -56,7 +56,7 @@ function TuoteMap() {
 
     return filteredTuotteet.map(
       ({kuva, nimi, arvostelut, kategoria, hinta, koko, star}) => (
-        <Tuote1
+        <Tuote
         kuva={kuva}
         nimi = {nimi}
         hinta={hinta}
@@ -82,7 +82,7 @@ function TuoteMap() {
       <Sidebar handleChange={handleChange}/>
        <Suositut handleClick={handleClick}/>
        
-        <Tuotesivu1 result={result}/>
+        <Tuotesivu result={result}/>
         </>
       );
   }

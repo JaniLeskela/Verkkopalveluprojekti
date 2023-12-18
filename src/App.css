@@ -1,9 +1,9 @@
 :root {
     --main-bg-color: #0C356A;
     --secondary-color: #0174BE;
+    flex-direction: column;  
 }
 .App {
-    
     flex-direction: column;
     height: 100vh;
     background-color: white;

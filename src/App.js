@@ -4,14 +4,13 @@ import {Routes, Route } from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Footer from './components/footer/Footer';
 import View from './components/View';
-
 import AddProducts from './components/addcategoryproducts/AddProducts';
 import AddCategories from './components/addcategoryproducts/AddCategories';
 import Register from './components/register/register'
 import Login from './components/login/login'
 import axios from 'axios'
-import TuoteMap from './components/tuotemap/tuotemap';
-import Tuotesivu1 from './components/tuotesivu1';
+import TuoteMap from './components/tuotemap';
+
 
 function App() {
   const [products, setProducts] = useState([])

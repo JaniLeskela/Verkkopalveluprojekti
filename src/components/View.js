@@ -1,10 +1,10 @@
 
 import kalja from '../assets/beer-banner.jpg'
 
-import Tuote1 from '../components/tuote/tuote1';
+import Tuote from '../components/tuote/tuote';
 import Suositut from '../components/suositut/suositut';
 //import tuotteet from '../components/data/tuotedb';
-import Tuotesivu1 from '../components/tuotesivu1';
+import Tuotesivu from '../components/tuotesivu';
 
 
 
@@ -28,7 +28,7 @@ function Tuotteet(props) {
   
     return tuote.map(
       ({image, productName, arvostelut, category, price, koko, star}) => (
-        <Tuote1
+        <Tuote
         kuva={image}
         nimi = {productName}
         star={star}
@@ -47,7 +47,7 @@ function Tuotteet(props) {
       <>
       <Banner/>
         <Suositut/>
-        <Tuotesivu1 result={result}/>
+        <Tuotesivu result={result}/>
         
         
         
